@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <!-- 
+    Title: Jack Coulter's Home Page
+    Description: Home page for Jack Coulter
+  -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Jack Coulter's Personal Website - Home">
+  <title>Home</title>
+
+  <!-- Styles -->
+  <style>
+    body {
+      background-color: #CCE5FF;
+      font-family: "Lucida Sans", "Trebuchet MS", sans-serif;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      overflow-x: hidden;
+      width: 100%;
+      box-sizing: border-box;
+    }
+
+    .navigation {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin: 10px 0;
+      padding: 0 10px;
+    }
+
+    .navigation a {
+      text-decoration: none;
+      color: #000;
+    }
+
+    .header {
+      text-align: center;
+      margin: 20px 0;
+    }
+
+    .image-container {
+      display: flex;
+      justify-content: center;
+      margin: 20px 0;
+    }
+
+    .image-container img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+    }
+
+    blockquote {
+      text-align: center;
+      font-style: italic;
+      margin: 20px;
+    }
+
+    .websites-box {
+      background-color: #fff;
+      border: 2px solid #000;
+      border-radius: 8px;
+      padding: 20px;
+      margin: 20px;
+      box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+      text-align: center;
+      max-width: 400px;
+    }
+
+    .footer {
+      text-align: center;
+      margin: 20px 0;
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+      .websites-box {
+        padding: 15px;
+        max-width: 90%;
+      }
+
+      .image-container {
+        margin: 15px 0;
+      }
+
+      blockquote {
+        margin: 15px;
+      }
+    }
+
+    @media (max-width: 375px) {
+      .navigation {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 5px;
+        overflow-x: hidden;
+        white-space: normal;
+      }
+
+      .navigation a {
+        margin: 0;
+      }
+
+      .websites-box {
+        padding: 10px;
+      }
+
+      .header, .image-container, blockquote, .websites-box, .footer {
+        text-align: center;
+        margin: 0 auto;
+        max-width: 95%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation Links -->
+  <div class="navigation">
+    <a href="index.html">Home</a>
+    <span>|</span>
+    <a href="about.html">About Me</a>
+    <span>|</span>
+    <a href="contact.html">Contact</a>
+    <span>|</span>
+    <a href="gallery.html">Gallery</a>
+    <span>|</span>
+    <a href="locations.html">My Favorite Places</a>
+  </div>
+
+  <!-- Header -->
+  <div class="header">
+    <h1>Jack Coulter</h1>
+    <p>An avid learner for all things software and a passionate collaborative worker.<br>
+    (...also a chill dude)</p>
+  </div>
+
+  <!-- Image Section -->
+  <div class="image-container">
+    <img src="me.jpg" alt="Jack Coulter">
+  </div>
+
+  <!-- Quote -->
+  <blockquote>
+    “The moment you accept things as they are, you don’t need to hope anymore, because you realize where you are is kind of okay.”<br>
+    - The Midnight Gospel
+  </blockquote>
+
+  <!-- Websites Section -->
+  <h2 style="text-align:center;">Websites that are (very) important to me</h2>
+  <div class="websites-box">
+    <p>
+      When I want to agonize over my investments:<br>
+      <a href="https://finviz.com/map.ashx" target="_blank">https://finviz.com/map.ashx</a>
+    </p>
+
+    <p>
+      For a 50/50 chance of FOMO or feeling better about my own night:<br>
+      <a href="https://www.instagram.com/almostfridaydu/" target="_blank">https://www.instagram.com/almostfridaydu/</a>
+    </p>
+
+    <p>
+      In case I need a wholesome distraction:<br>
+      <a href="https://www.reddit.com/r/Eyebleach/" target="_blank">https://www.reddit.com/r/Eyebleach/</a>
+    </p>
+  </div>
+
+  <!-- Footer -->
+  <div class="footer">
+    <p>&copy; 2025 Jack Coulter</p>
+  </div>
+
+</body>
+</html>

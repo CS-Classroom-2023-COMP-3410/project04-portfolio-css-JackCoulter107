@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <!-- 
+    Title: Jack Coulter's Gallery
+    Description: A page dedicated to images 
+  -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Jack Coulter's Gallery of fun images">
+  <title>Gallery</title>
+
+  <style>
+    body {
+      background-color: #ffe7cd;
+      font-family: "Lucida Sans", "Trebuchet MS", sans-serif;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      overflow-x: hidden;
+      width: 100%;
+      box-sizing: border-box;
+    }
+
+    .navigation {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin: 10px 0;
+      padding: 0 10px;
+    }
+
+    .navigation a {
+      text-decoration: none;
+      color: #000;
+    }
+
+    h1 {
+      text-align: center;
+      margin: 20px 0;
+    }
+
+    p {
+      text-align: center;
+      margin: 10px 0;
+    }
+
+    .gallery-item {
+      text-align: center;
+      margin: 20px auto;
+      width: 90%;
+      max-width: 600px;
+    }
+
+    .gallery-item img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+    }
+
+    .footer {
+      text-align: center;
+      margin: 20px 0;
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+      .gallery-item {
+        margin: 15px auto;
+      }
+
+      h1 {
+        font-size: 1.8em;
+      }
+
+      p {
+        font-size: 1em;
+      }
+    }
+
+    @media (max-width: 375px) {
+      .navigation {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 5px;
+        overflow-x: hidden;
+        white-space: normal;
+      }
+
+      .navigation a {
+        margin: 0;
+      }
+
+      h1 {
+        font-size: 1.5em;
+      }
+
+      p {
+        font-size: 0.9em;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation Links -->
+  <div class="navigation">
+    <a href="index.html">Home</a>
+    <span>|</span>
+    <a href="about.html">About Me</a>
+    <span>|</span>
+    <a href="contact.html">Contact</a>
+    <span>|</span>
+    <a href="gallery.html">Gallery</a>
+    <span>|</span>
+    <a href="locations.html">My Favorite Places</a>
+  </div>
+
+  <h1>Gallery</h1>
+
+  <p>This page is dedicated to a few of the photos I've taken in the past couple years, enjoy!</p>
+
+  <!-- Gallery Items -->
+  <div class="gallery-item">
+    Sunset at Rosewood Miramar Beach<br>
+    <img src="sunset.jpg" alt="Sunset">
+  </div>
+
+  <div class="gallery-item">
+    Butterfly at SB Museum of Natural History<br>
+    <img src="butterfly.jpg" alt="Butterfly">
+  </div>
+
+  <div class="gallery-item">
+    Cabin at the top of Gold Mint Trailhead<br>
+    <img src="house.jpg" alt="Cabin">
+  </div>
+
+  <div class="gallery-item">
+    Mountains outside of Whittier<br>
+    <img src="mountain.jpg" alt="Mountain">
+  </div>
+
+  <div class="gallery-item">
+    Road outside of LA<br>
+    <img src="road.jpg" alt="Placeholder 1">
+  </div>
+
+  <div class="gallery-item">
+    Sealions by Port Hueneme<br>
+    <img src="sealions.jpg" alt="Placeholder 2">
+  </div>
+
+  <div class="gallery-item">
+    Fireworks in Santa Barbara Harbor<br>
+    <img src="firework.jpg" alt="Placeholder 3">
+  </div>
+
+  <div class="gallery-item">
+    Chairlift at Mammoth Mountain<br>
+    <img src="chairlift.jpg" alt="Placeholder 4">
+  </div>
+
+  <!-- Footer -->
+  <div class="footer">
+    <p>&copy; 2025 Jack Coulter</p>
+  </div>
+
+</body>
+</html>

@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <!-- 
+    Title: About Jack Coulter
+    Description: Learn about Jack Coulter
+  -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Jack Coulter's About Me Page">
+  <title>About Me</title>
+
+  <style>
+    body {
+      background-color: #f2d6ff;
+      font-family: "Lucida Sans", "Trebuchet MS", sans-serif;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      overflow-x: hidden;
+      width: 100%;
+      box-sizing: border-box;
+    }
+
+    .navigation {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin: 10px 0;
+      padding: 0 10px;
+    }
+
+    .navigation a {
+      text-decoration: none;
+      color: #000;
+    }
+
+    h1 {
+      text-align: center;
+      margin: 20px 0;
+    }
+
+    .image-container {
+      display: flex;
+      justify-content: center;
+      margin: 20px 0;
+    }
+
+    .image-container img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+    }
+
+    .content {
+      max-width: 600px;
+      width: 90%;
+      margin: 0 auto;
+      line-height: 1.6;
+      text-align: left;
+    }
+
+    .content h2 {
+      text-align: left;
+      margin-top: 20px;
+    }
+
+    .box {
+      background-color: #fff;
+      border: 2px solid #000;
+      border-radius: 8px;
+      padding: 15px;
+      margin: 20px auto;
+      box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+      max-width: 400px;
+      text-align: left;
+    }
+
+    footer {
+      text-align: center;
+      margin: 20px 0;
+    }
+
+    ul {
+      list-style: disc;
+      padding-left: 20px;
+    }
+
+    ul li {
+      margin-bottom: 5px;
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+      .content {
+        text-align: center;
+      }
+
+      .content h2 {
+        text-align: center;
+      }
+
+      .box {
+        text-align: center;
+      }
+    }
+
+    @media (max-width: 375px) {
+      .navigation {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 5px;
+        overflow-x: hidden;
+        white-space: normal;
+      }
+
+      .navigation a {
+        margin: 0;
+      }
+
+      .content, .box {
+        max-width: 95%;
+      }
+
+      .image-container {
+        margin: 15px 0;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation Links -->
+  <div class="navigation">
+    <a href="index.html">Home</a>
+    <span>|</span>
+    <a href="about.html">About Me</a>
+    <span>|</span>
+    <a href="contact.html">Contact</a>
+    <span>|</span>
+    <a href="gallery.html">Gallery</a>
+    <span>|</span>
+    <a href="locations.html">My Favorite Places</a>
+  </div>
+
+  <h1>About Me</h1>
+
+  <!-- Image Below Title -->
+  <div class="image-container">
+    <img src="hiking.jpg" alt="Hiking Adventure">
+  </div>
+
+  <div class="content">
+    <p><strong>Hi, I'm Jack Coulter!</strong></p>
+    <p>
+      I was born and raised in Anchorage, Alaska, but now live in Santa Barbara, California.
+      Here in Denver, I feel like I get the best of both worlds, but I definitely miss the ocean!
+      Being able to explore all these beautiful states has been so exciting the past few years.
+    </p>
+
+    <h2>Hobbies Include:</h2>
+    <div class="box">
+      <ul>
+        <li>Rock-Climbing</li>
+        <li>Snowboarding</li>
+        <li>Photography</li>
+        <li>Hiking</li>
+      </ul>
+    </div>
+
+    <h2>Big fan of:</h2>
+    <div class="box">
+      <ul>
+        <li>Studio Ghibli</li>
+        <li>Road trips</li>
+        <li>Baggy Shirts</li>
+        <li>The Gym</li>
+        <li>Candles</li>
+        <li>Listening to Really Long Spotify Playlists</li>
+      </ul>
+    </div>
+
+    <h2>Current Video Game Obsessions:</h2>
+    <div class="box">
+      <ul>
+        <li>Tom Clancy's The Division 2</li>
+        <li>Tears of The Kingdom</li>
+        <li>For Honor</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <div class="footer">
+    <p>&copy; 2025 Jack Coulter</p>
+  </div>
+
+
+</body>
+</html>

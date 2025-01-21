@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <!-- 
+    Title: My Favorite Places
+    Description: Jack Coulter's Favorite Spots
+  -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Jack Coulter's Favorite Places">
+  <title>My Favorite Places</title>
+
+  <style>
+    body {
+      background-color: #ffcbda;
+      font-family: "Lucida Sans", "Trebuchet MS", sans-serif;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      overflow-x: hidden;
+      width: 100%;
+      box-sizing: border-box;
+    }
+
+    .navigation {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin: 10px 0;
+      padding: 0 10px;
+    }
+
+    .navigation a {
+      text-decoration: none;
+      color: #000;
+    }
+
+    h1 {
+      text-align: center;
+      margin: 20px 0;
+    }
+
+    .intro-text {
+      text-align: center;
+      font-size: 1.2em;
+      margin: 20px auto;
+      max-width: 600px;
+    }
+
+    .locations-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      margin: 20px 0;
+      width: 90%;
+      max-width: 1200px;
+    }
+
+    .location-column {
+      background-color: #fff;
+      border: 2px solid #000;
+      border-radius: 8px;
+      padding: 10px;
+      text-align: center;
+      box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+      flex: 1 1 calc(33.333% - 20px);
+      max-width: calc(33.333% - 20px);
+    }
+
+    .location-column h2 {
+      margin-bottom: 10px;
+    }
+
+    .location-column p {
+      margin: 5px 0;
+    }
+
+    footer {
+      text-align: center;
+      margin: 30px 0;
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+      .location-column {
+        flex: 1 1 calc(50% - 20px);
+        max-width: calc(50% - 20px);
+      }
+    }
+
+    @media (max-width: 375px) {
+      .location-column {
+        flex: 1 1 100%;
+        max-width: 100%;
+      }
+
+      .navigation {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 5px;
+        overflow-x: hidden;
+        white-space: normal;
+      }
+
+      .navigation a {
+        margin: 0;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation Links -->
+  <div class="navigation">
+    <a href="index.html">Home</a>
+    <span>|</span>
+    <a href="about.html">About Me</a>
+    <span>|</span>
+    <a href="contact.html">Contact</a>
+    <span>|</span>
+    <a href="gallery.html">Gallery</a>
+    <span>|</span>
+    <a href="locations.html">My Favorite Places</a>
+  </div>
+
+  <h1>My Favorite Places</h1>
+
+  <!-- Introductory Text -->
+  <p class="intro-text">Just a handful of places that come to mind!</p>
+
+  <!-- Locations in Columns -->
+  <div class="locations-container">
+    <!-- Alaska Column -->
+    <div class="location-column">
+      <h2>Alaska</h2>
+      <p><a href="https://www.google.com/maps/search/Alyeska" target="_blank">Alyeska</a></p>
+      <p><a href="https://www.google.com/maps/search/Flat+Top+Mountain" target="_blank">Flat Top Mountain</a></p>
+      <p><a href="https://www.google.com/maps/search/Whittier+Cruise+Port" target="_blank">Whittier Cruise Port</a></p>
+      <p><a href="https://www.google.com/maps/search/Denali+National+Park" target="_blank">Denali National Park</a></p>
+      <p><a href="https://www.google.com/maps/search/Mendenhall+Glacier" target="_blank">Mendenhall Glacier</a></p>
+      <p><a href="https://www.google.com/maps/search/Kenai+Fjords" target="_blank">Kenai Fjords</a></p>
+    </div>
+
+    <!-- California Column -->
+    <div class="location-column">
+      <h2>California</h2>
+      <p><a href="https://www.google.com/maps/search/Mammoth+Mountain" target="_blank">Mammoth Mountain</a></p>
+      <p><a href="https://www.google.com/maps/search/Rock+Gardens" target="_blank">Rock Gardens</a></p>
+      <p><a href="https://www.google.com/maps/search/Yosemite" target="_blank">Yosemite</a></p>
+      <p><a href="https://www.google.com/maps/search/Solvang" target="_blank">Solvang</a></p>
+      <p><a href="https://www.google.com/maps/search/Los+Olivos" target="_blank">Los Olivos</a></p>
+      <p><a href="https://www.google.com/maps/search/Joshua+Tree" target="_blank">Joshua Tree</a></p>
+    </div>
+
+    <!-- Colorado Column -->
+    <div class="location-column">
+      <h2>Colorado</h2>
+      <p><a href="https://www.google.com/maps/search/Winter+Park" target="_blank">Winter Park</a></p>
+      <p><a href="https://www.google.com/maps/search/Garden+of+the+Gods" target="_blank">Garden of the Gods</a></p>
+      <p><a href="https://www.google.com/maps/search/Canyonlands" target="_blank">Canyonlands</a></p>
+      <p><a href="https://www.google.com/maps/search/Mesa+Trail" target="_blank">Mesa Trail</a></p>
+      <p><a href="https://www.google.com/maps/search/Maroon+Bells" target="_blank">Maroon Bells</a></p>
+      <p><a href="https://www.google.com/maps/search/Mount+Falcon+Park" target="_blank">Mount Falcon Park</a></p>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <div class="footer">
+    <p>&copy; 2025 Jack Coulter</p>
+  </div>
+
+</body>
+</html>
